@@ -2,7 +2,7 @@
 
 - https://sgr-ksmt.dev
 - Built with Flutter
-- running on Firebase Hosting
+- Running on Firebase Hosting
 
 ## Development
 
@@ -11,7 +11,7 @@ $ git clone ...
 $ cd path/to/repository
 $ fvm install
 $ fvm flutter pub get
-$ fvm flutter -d chrome --web-renderer=html
+$ fvm flutter run -d chrome --web-renderer=html
 ```
 
 ## Deployment
