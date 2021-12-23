@@ -7,7 +7,7 @@ class NameText extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Text(
       'Suguru Kishimoto',
-      style: TextStyle(fontSize: 32),
+      style: TextStyle(fontSize: 32, fontWeight: FontWeight.w400),
     );
   }
 }

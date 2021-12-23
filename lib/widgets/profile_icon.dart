@@ -8,10 +8,16 @@ class ProfileIcon extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ClipOval(
+    return PhysicalModel(
+      color: Colors.transparent,
+      elevation: 4,
+      borderRadius: BorderRadius.circular(64),
       child: CircleAvatar(
+        backgroundColor: Colors.transparent,
         radius: 64,
-        child: Assets.images.icon.image(),
+        child: ClipOval(
+          child: Assets.images.icon.image(),
+        ),
       ),
     );
   }

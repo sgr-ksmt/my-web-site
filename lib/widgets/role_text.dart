@@ -7,6 +7,7 @@ class RoleText extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Text(
       'iOS/Flutter Software Engineer / Engineering Manager',
+      style: TextStyle(fontSize: 12),
     );
   }
 }

@@ -10,10 +10,16 @@ class App extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'sgr-ksmt',
-      theme: ThemeData.dark().copyWith(
-        textTheme: GoogleFonts.workSansTextTheme(ThemeData.dark().textTheme),
-      ),
+      themeMode: ThemeMode.system,
+      theme: _theme(ThemeData.light()),
+      darkTheme: _theme(ThemeData.dark()),
       home: const HomePage(),
     );
   }
+
+  ThemeData _theme(ThemeData data) => data.copyWith(
+        textTheme: GoogleFonts.workSansTextTheme(
+          data.textTheme,
+        ),
+      );
 }

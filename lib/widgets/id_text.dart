@@ -5,6 +5,9 @@ class IDText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Text('@su- / @sgr-ksmt, he/him');
+    return const Text(
+      '@su- / @sgr-ksmt, he/him',
+      style: TextStyle(fontSize: 12),
+    );
   }
 }

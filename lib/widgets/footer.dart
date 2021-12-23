@@ -23,8 +23,8 @@ class Footer extends HookWidget {
               RichText(
                 textAlign: TextAlign.center,
                 text: TextSpan(
-                  style: const TextStyle(
-                    color: Colors.white,
+                  style: TextStyle(
+                    color: Theme.of(context).textTheme.bodyText1?.color,
                   ),
                   children: [
                     const TextSpan(text: 'Built with '),
