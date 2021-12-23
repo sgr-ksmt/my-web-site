@@ -3,6 +3,7 @@ import 'dart:html' as html;
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Footer extends HookWidget {
   const Footer();
@@ -23,13 +24,13 @@ class Footer extends HookWidget {
               RichText(
                 textAlign: TextAlign.center,
                 text: TextSpan(
-                  style: TextStyle(
+                  style: GoogleFonts.workSans().copyWith(
                     color: Theme.of(context).textTheme.bodyText1?.color,
                   ),
                   children: [
                     const TextSpan(text: 'Built with '),
                     TextSpan(
-                      text: 'Flutter 💙',
+                      text: 'Flutter',
                       style: TextStyle(
                         decoration: isHoverOnFlutter.value ? TextDecoration.underline : null,
                       ),
@@ -40,7 +41,7 @@ class Footer extends HookWidget {
                     ),
                     const TextSpan(text: ' and running on '),
                     TextSpan(
-                      text: 'Firebase 🧡',
+                      text: 'Firebase',
                       style: TextStyle(
                         decoration: isHoverOnFirebase.value ? TextDecoration.underline : null,
                       ),
