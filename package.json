@@ -2,7 +2,7 @@
   "private": true,
   "license": "MIT",
   "scripts": {
-    "build": "fvm flutter build web --web-renderer=html",
+    "build": "fvm flutter build web --release --web-renderer=canvaskit",
     "deploy": "yarn build && yarn firebase deploy --only hosting"
   },
   "devDependencies": {

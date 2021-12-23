@@ -21,5 +21,6 @@ class App extends StatelessWidget {
         textTheme: GoogleFonts.workSansTextTheme(
           data.textTheme,
         ),
+        primaryColor: Colors.grey[900],
       );
 }
