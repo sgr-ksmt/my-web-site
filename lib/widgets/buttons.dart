@@ -15,6 +15,7 @@ class LinkButtons extends StatelessWidget {
         AboutButton(),
         GitHubButton(),
         TwitterButton(),
+        LinkedInButton(),
         ZennButton(),
         MediumButton(),
         KotekanButton(),
@@ -82,6 +83,21 @@ class TwitterButton extends StatelessWidget {
       hoverMessage: 'Twitter',
       url: 'https://twitter.com/_sgr_ksmt',
       icon: FaIcon(FontAwesomeIcons.twitter),
+    );
+  }
+}
+
+class LinkedInButton extends StatelessWidget {
+  const LinkedInButton();
+
+  @override
+  Widget build(BuildContext context) {
+    return const _LinkedIconButton(
+      hoverMessage: 'LinkedIn',
+      url: 'https://www.linkedin.com/in/sgr-ksmt',
+      icon: FaIcon(
+        FontAwesomeIcons.linkedinIn,
+      ),
     );
   }
 }
