@@ -19,5 +19,5 @@ $ fvm flutter -d chrome --web-renderer=html
 ```bash
 $ cd path/to/repository
 $ fvm flutter build web --web-renderer=html
-$ yarn deploy
+$ yarn deploy --only hosting
 ```
