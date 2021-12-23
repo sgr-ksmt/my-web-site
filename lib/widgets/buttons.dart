@@ -15,6 +15,7 @@ class LinkButtons extends StatelessWidget {
         AboutButton(),
         GitHubButton(),
         TwitterButton(),
+        ZennButton(),
         MediumButton(),
         KotekanButton(),
       ],
@@ -81,6 +82,24 @@ class TwitterButton extends StatelessWidget {
       hoverMessage: 'Twitter',
       url: 'https://twitter.com/_sgr_ksmt',
       icon: FaIcon(FontAwesomeIcons.twitter),
+    );
+  }
+}
+
+class ZennButton extends StatelessWidget {
+  const ZennButton();
+
+  @override
+  Widget build(BuildContext context) {
+    return _LinkedIconButton(
+      hoverMessage: 'Zenn',
+      url: 'https://zenn.dev/sgr_ksmt',
+      icon: ClipRRect(
+        borderRadius: BorderRadius.circular(4),
+        child: Assets.images.zenn.svg(
+          color: Theme.of(context).textTheme.bodyText1?.color,
+        ),
+      ),
     );
   }
 }
