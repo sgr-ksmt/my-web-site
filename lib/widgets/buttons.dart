@@ -9,8 +9,8 @@ class LinkButtons extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisSize: MainAxisSize.min,
+    return Wrap(
+      direction: Axis.horizontal,
       children: const [
         AboutButton(),
         GitHubButton(),

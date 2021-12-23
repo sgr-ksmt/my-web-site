@@ -18,27 +18,40 @@ class HomePage extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.all(16.0),
             child: Center(
-              child: Row(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  const ProfileIcon(),
-                  const Gap(16),
-                  Flexible(
-                    child: Column(
+              child: MediaQuery.of(context).size.width >= 500
+                  ? Row(
                       mainAxisSize: MainAxisSize.min,
-                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        const ProfileIcon(),
+                        const Gap(16),
+                        Flexible(
+                          child: Column(
+                            mainAxisSize: MainAxisSize.min,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: const [
+                              NameText(),
+                              IDText(),
+                              Gap(4),
+                              RoleText(),
+                              Gap(8),
+                              LinkButtons(),
+                            ],
+                          ),
+                        ),
+                      ],
+                    )
+                  : Column(
                       children: const [
+                        ProfileIcon(),
+                        Gap(32),
                         NameText(),
                         IDText(),
                         Gap(4),
                         RoleText(),
-                        Gap(8),
+                        Gap(16),
                         LinkButtons(),
                       ],
                     ),
-                  ),
-                ],
-              ),
             ),
           ),
           const Footer(),
