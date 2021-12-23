@@ -15,10 +15,17 @@ dependencies:
   flutter_lints: ^1.0.4
   google_fonts: ^2.0.0
   cupertino_icons: ^1.0.2
+  gap: ^2.0.0
+  flutter_hooks: ^0.18.1
+  font_awesome_flutter: ^9.2.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  build_runner:
+  flutter_gen_runner:
 
 flutter:
+  assets:
+    - assets/images/
   uses-material-design: true

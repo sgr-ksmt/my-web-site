@@ -26,3 +26,4 @@ linter:
     directives_ordering: false
     use_key_in_widget_constructors: false
     parameter_assignments: true
+    avoid_web_libraries_in_flutter: false
