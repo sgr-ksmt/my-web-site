@@ -41,6 +41,7 @@ class HomePage extends StatelessWidget {
                       ],
                     )
                   : Column(
+                      mainAxisSize: MainAxisSize.min,
                       children: const [
                         ProfileIcon(),
                         Gap(32),
