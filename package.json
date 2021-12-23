@@ -1,4 +1,10 @@
 {
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "build": "fvm flutter build web --web-renderer=html",
+    "deploy": "yarn build && yarn firebase deploy --only hosting"
+  },
   "devDependencies": {
     "firebase-tools": "^10.0.1"
   }
