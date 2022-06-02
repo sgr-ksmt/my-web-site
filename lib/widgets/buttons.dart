@@ -29,11 +29,13 @@ class _LinkedIconButton extends StatelessWidget {
     required this.icon,
     required this.url,
     required this.hoverMessage,
+    this.asNew = false,
   });
 
   final Widget icon;
   final String url;
   final String hoverMessage;
+  final bool asNew;
 
   @override
   Widget build(BuildContext context) {
@@ -41,7 +43,7 @@ class _LinkedIconButton extends StatelessWidget {
       message: hoverMessage,
       child: IconButton(
         splashRadius: 20,
-        onPressed: () => html.window.open(url, '_blank'),
+        onPressed: () => html.window.open(url, asNew ? '_blank' : '_self'),
         icon: icon,
       ),
     );
@@ -55,7 +57,7 @@ class AboutButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return const _LinkedIconButton(
       hoverMessage: 'About',
-      url: 'https://me.sgr-ksmt.dev',
+      url: 'https://sgr-ksmt.notion.site/Suguru-Kishimoto-Software-Engineer-1e8e78b9de5a49d3952f283663a40123',
       icon: FaIcon(FontAwesomeIcons.userAlt),
     );
   }
@@ -140,7 +142,7 @@ class KotekanButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return _LinkedIconButton(
       hoverMessage: 'Kotekan',
-      url: 'https://apps.apple.com/app/id1598027056',
+      url: 'https://apps.apple.com/jp/app/id1598027056',
       icon: ClipRRect(
         borderRadius: BorderRadius.circular(4),
         child: Assets.images.kotekan.image(),
